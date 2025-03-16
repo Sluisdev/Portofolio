@@ -6,14 +6,13 @@
 /* Removing Padding & Margin from HTML elements to ensure elements are using full width */
 
 
-html {
+html { 
     scroll-snap-type: y mandatory;
-    scroll-behavior:
 }
 
 
 body {
-    background-color: #253334;
+    background: linear-gradient(#253334 40%,#3E5354,#809F97 90%,#AEBDAA)
 }
 
 .navigation-bar {
@@ -21,12 +20,13 @@ body {
     color: #FEFAE0;
     height: 30px;
     scroll-snap-align: start;
+    border-radius: 0px 0px 5px 5px;
 }
 
 /* Navigation Bar & Navigation Items */
 
 .intro-container {
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +34,7 @@ body {
     align-items: center;
     background-image: url(./images/pxfuel.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 #portret {
@@ -57,15 +58,17 @@ body {
 #intro-text {
     color: #0E8388;
     font-weight: bold;
-    font-family: Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
+    font-family: "Parisienne",cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Intro Section */
 
 .about-me-container {
-    height: 100vh;
+    height: 100%;
     margin-top: 150px;
 }
 
@@ -80,6 +83,7 @@ body {
     padding-top: 1px;  /* Adding 1PX padding due to margin collapsing on the child element */
     text-align: center;
     scroll-snap-align: start;
+    font-size: 1.4rem;
 }
 
 .title > h1 {
@@ -98,6 +102,7 @@ body {
    background-color: #CBE4DE;
    padding: 10px;
    text-align: center;
+
 }
 
 .item > p {
@@ -110,12 +115,177 @@ body {
     border-color: black;
 }
 
-/*  */
+.outdoor {
+    background-image: url(./images/SVG-Free-Mountain-Bike-by-PrintYourStoryCom.svg);
+    background-repeat: no-repeat;
+    background-position: 85px 120px;
+}
 
-#projects-section {
-    height: 100vh;
+.tech {
+    background-image: url(./images/laptop-computer-code-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 40px 195px;
+
+}
+
+.cook {
+    background-image: url(./images/cooking-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: bottom left;
+
+}
+
+.movie {
+    background-image: url(./images/movie-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 100px 195px;
+}
+   
+
+.projects-container {
+    height: 95vh;
+    margin-top: 50px;
     scroll-snap-align: start;
 }
+
+#projects-section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.gear {
+    width: 90px;
+    height: 90px;
+}
+
+
+#hammer {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    z-index: 5;
+    rotate: 45deg;
+}
+
+#wrench {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    z-index: 5;
+}
+
+#in-progress {
+    font-size: 2.0rem;
+    color: #2C3333;
+}
+
+.end-bar {
+    background-color: #2E4F4F;
+    height: 31px;
+}
+
+
+@media (max-width: 550px) {
+    #about-me-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-container {
+        height: 100%;
+    }
+
+   .tech {
+    scroll-snap-align: start;
+   }
+
+   .cook {
+    scroll-snap-align: start;
+   }
+
+   .movie {
+    scroll-snap-align: start;
+   }
+
+
+}
+
+@media (max-width: 780px) {
+    
+    #in-progress {
+    font-size: 18px;
+   }
+
+   #wrench {
+    height: 50px;
+    width: 50px;
+   }
+
+   #hammer {
+    height: 50px;
+    width: 50px;
+   }
+
+   .gear {
+    width: 50px;
+    height: 50px;
+   }
+
+   #intro-text {
+    margin-top: 15px;
+   }
+
+}
+
+@media (max-width: 350px){
+    .projects-container {
+        text-align: center;
+    }
+
+    .gear {
+        margin-right: 50px;
+    }
+
+    .intro-container {
+        height: 100%;
+    }
+}
+
+@media (Max-width: 1000px) {
+    #about-me-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .movie {
+        scroll-snap-align: start;
+    }
+
+}
+
+@media (Max-width: 880px) {
+    .cook {
+        scroll-snap-align: start;
+    }
+}
+
+
+
+
+
+
+
+    
+
+
 
 
 
