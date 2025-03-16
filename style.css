@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Removing Padding & Margin from HTML elements to ensure elements are using full width */
+
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior:
+}
+
+
+body {
+    background-color: #253334;
+}
+
+.navigation-bar {
+    background-color: #2E4F4F;
+    color: #FEFAE0;
+    height: 30px;
+    scroll-snap-align: start;
+}
+
+/* Navigation Bar & Navigation Items */
+
+.intro-container {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    background-image: url(./images/pxfuel.jpg);
+    background-position: center;
+}
+
+#portret {
+    width: 280x;
+    height: 280px;
+    border-radius: 50%;
+    border: 7px;
+    border-style: solid;
+    border-color: #2C3333;
+}
+
+#intro-portret {
+    order: 1;
+    transition: rotate 1s;
+}
+
+#intro-portret:hover {
+    rotate: 180deg;
+}
+
+#intro-text {
+    color: #0E8388;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Intro Section */
+
+.about-me-container {
+    height: 100vh;
+    margin-top: 150px;
+}
+
+#about-me-items {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.title {
+    color: #DCF7F1;
+    padding-top: 1px;  /* Adding 1PX padding due to margin collapsing on the child element */
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.title > h1 {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.item {
+   height: 350px;
+   width: 250px;
+   border: 2px;
+   border-color:#003B4A;
+   border-style: solid;
+   border-radius: 7px;
+   color: #003B4A;
+   background-color: #CBE4DE;
+   padding: 10px;
+   text-align: center;
+}
+
+.item > p {
+    margin-top: 10px;
+}
+
+.item:hover {
+    box-shadow: 3px 3px 10px black;
+    border-style: solid;
+    border-color: black;
+}
+
+/*  */
+
+#projects-section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+
+
+
+
