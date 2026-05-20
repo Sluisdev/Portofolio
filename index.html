@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Website</title>
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navigation-bar"></header>
+    <div class="intro-container">
+        <div class="intro-items">
+            <img id="portret" src="./images/2025-02-24 20_14_02-Profile.jpg - Greenshot image editor.png" alt="Profile Picture"/>
+            <h1 id="intro-text">Welkom bij mijn Portofolio</h1>
+        </div>
+    </div>
+    <div class="about-me-container">
+        <h1 class="section-title">Over mij</h1>
+        <p class="info-p">Leuk dat je hier bent! Mijn naam is Peter, ik ben momenteel 29 jaar oud en ik woon in Kampen. 
+            Hieronder vind je meer informatie over waar ik me graag mee bezig houd.</p>
+        <div id="about-me-items">
+            <div class="item outdoor">
+                <h2>Outdoor Fanatiekeling</h2>
+                <p>Mijn vrije tijd spendeer ik graag buiten de deur. Mountainbiken, wandelen/hiken, hardlopen, hengeltje uitgooien, noem het maar op.
+                    Zelfs mijn vakanties zijn merendeels gefocust op het doen van activeiten in de natuur. Hoe meer ik buiten kan doen, des te beter! 
+                </p>
+            </div>
+            <div class="item tech">
+                <h2>Tech-enthousiasteling</h2>
+                <p>Als kind zijnde was ik al druk bezig met computers. 
+                    Ik kan uren bezig zijn met het ontdekken van nieuwe technieken of het oplossen van een technisch probleem.
+                    Nieuwe technieken ontdekken of problemen niet kunnen oplossen, is brandstof voor mijn nieuwsgierigheid & doorzettingsvermogen.
+                    Dit resulteert regelmatig in slaap te kort!
+                </p>
+            </div>
+            <div class="item cook">
+                <h2>Bescheiden Thuiskok</h2>
+                <p>De eerste keer voor jezelf koken, dat ging vast niet iedereen goed af. Voor mij ook zeker niet, maar het resulteede wel in een nieuwe hobby.
+                   Regelmatig sta ik in de keuken om nieuwe recepten uit te proberen of om te koken voor vrienden en/of familie.                
+                </p>
+            </div>
+            <div class="item movie">
+                <h2>Films & Series</h2>
+                <p><b><i>'Heb je deze al gezien?'</i></b> Is een vraag die ik vaker zal stellen dan goed is voor wie dan ook.
+                    Als het op film of serie kijken aankomt, ben ik echt een Fanatiekeling. Ik ben altijd opzoek naar nieuwe films & series om te kijken!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="projects-container">
+        <h1 class="section-title">Mijn Projecten</h1>
+        <p class="info-p">
+            Hieronder vind je de projecten waar in gewerkt heb. Alle projecten zijn te vinden op GitHub. 
+            Gebruik de knop rechtsonder in het projectitem voor een uitgebreide toelichting over het project.
+        </p>
+        <div class="overview-container" id="rechtdeurzee-overview">
+            <div class="overview-items-div">
+                <section>
+                    <h2>Over Dit Project</h2>
+                    <p>Rechtdeurzee is een mannenkoor dat bestaat uit een groep van ongeveer 50 mannen.
+                    Mijn eigen Opa is onderdeel van dit Mannenkoor. 
+                    Hij beheerde de oude website van het mannenkoor, maar deze website liet veel te wensen over. 
+                    </p>
+                    <p>
+                        Toen ik genoeg begreep van HTML, CSS, JavaScript & wat basis ontwerp begrippen, ben ik begonnen met het herbouwen van de website.
+                        De focus lag vooral op duidelijke home pagina met & een overzichtelijke pagina voor de aankomende evenementen.
+                        Het Koor wil graag dat de bezoeker een beter beeld heeft bij wie het koor is, en wanneer en waar ze het koor kunnen zien.
+                    </p>
+                    <p>Initieel zou de website alleen een front-end nodig hebben. 
+                    Omdat het koor graag hun eigen agenda op de website wil beheren, is er ook een backend ontwikkeld.
+                    De website heeft nu ook een admin portaal waar nieuwe evenementen kunnen worden aangemaakt, aanpassen of verwijderen van bestaande evenementen.
+                    </p>
+                    <div class="imgs-overview">
+                        <img src="./images/FE-preview-1.png" alt="">
+                        <img src="./images/FE-preview-2.png" alt="">
+                        <img src="./images/BE-preview-2.png" alt="back-end-login">
+                        <img src="./images/BE-preview-1.png" alt="back-end-portal">
+                    </div>
+                </section>
+                <section class="tech-section">
+                    <h2>De Technische Kant</h2>
+                    <p>
+                        De front-end is gebouwd met HTML, CSS & JavaScript. Het ontwerp van de website is bijna volledig door mijzelf gedaan.
+                        De golfvormige achtergrond voor de muzikanten is gemaakt met een CSS shape generator. 
+                        De carousel met alle sponsoren is ook niet volledig mijn eigen code. Dit heb ik overgenomen van een how-to artikel.
+                        Ook is de website doormiddel van media queries aangepast voor verschillende scherm maten. 
+                    </p>
+                    <p>
+                        Zoals hierboven al benoemd, heeft de Rechtdeuzee website ook een backend. Dit maakt het een fullstack Project.
+                        De backend is gebouwd met NodeJS & Express als framework voor de routering. 
+                        Als database heb ik MongoDB gebruikt In combinatie met Mongoose voor het modelleren van de data voordat deze in de database opgeslagen wordt.
+                        In dit project maak ik gebruik van EJS als templating engine. Bijvoorbeeld, de agenda pagina met de opkomende evenemten, wordt dynamisch gegenereerd met EJS. 
+                    </p>
+                    <section>
+                        <div class="overview-lists">
+                            <ul>
+                                <h3>Features</h3>
+                                <li>Sponsorlogos in een carousel</li>
+                                <li>Responsive UI</li>
+                                <li>Footer component met aankomende evenementen</li>
+                                <li>Hamburger menu voor kleiner schermformaat</li>
+                            </ul>
+                            <ul>
+                                <li>Login portaal (backend)</li>
+                                <li>Wachtwoord herstel per mail</li>
+                                <li>Volledig beheerbare Agenda (CRUD)</li>
+                            </ul>
+                        </div>
+                        <div class="overview-lists">
+                            <ul>
+                                <h3>Verbeter punten</h3>
+                                <li>Semantische HTML</li>
+                                <li>Carousel Slider</li>
+                                <li>Error afhandeling</li>
+                                <li>Data validatie</li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <button class="close-btn" data-project="rechtdeurzee"><img src="./images/icons/close.svg" alt=""></button>
+        </div>
+        <div class="overview-container" id="praktijk56-overview">
+            <div class="overview-items-div">
+                <section>
+                    <h2>Over Dit Project</h2>
+                    <p>
+                        Praktijk 56 is een opstartend massagepraktijk. De eigenaresse gaat binnenkort haar praktijk openen.
+                        Ze wil graag een website met een rustig & moderne uitstraling, en het belangrijkste, de website moet een boekingsysteem bevatten.
+                    <p>
+                        Het ontwerp is gedaan door een grafisch-ontwerper in opleiding. 
+                        Nadat het ontwerp was aangeleverd, heb ik met CSS het ontwerp zo identiek mogelijk nagebouwd.
+                        Hier zaten een aantal leuke uitdagingen in, zoals de 'hero'sectie op de home pagina. 
+                        Het meest uitdagend was de Arc's/bogen halverwege de home & Over Ons pagina. 
+                    </p>
+                    <p>
+                        Zoals aangegeven, zal deze website een boekingsysteem bevatten. 
+                        In het boekingsproces kan de klant de behandeling selecteren en op basis van de behandeling, de beschikbare tijden en datums zien. 
+                        Wanneer de boeking gemaakt is, zal er een email verstuurt worden naar de eigenaresse met een agenda uitnodiging corresponderent met de gemaakte afspraak.
+                        Zo kan zij de boekingen bijhouden via haar eigen agenda.  
+                        Een boekingsbevestiging zal verstuurd worden naar de klant. Betalingen worden ter plaatse gedaan. Eventueel wordt dit op een later moment geïntegreerd.
+                    </p>
+                    <p>
+                        Ook wordt er een functie gebouwd worden voor klanten omzich aan te melden voor een nieuwsbrief. 
+                    </p>
+                    <div class="imgs-overview">
+                        <img src="./images/pr56-1.png" alt="praktijk-56-preview">
+                        <img src="./images/pr56-2.png" alt="praktijk-56-preview">
+                        <img src="./images/pr56-3.png" alt="praktijk-56-preview">
+                        <img src="./images/pr56-4.png" alt="praktijk-56-preview">
+                    </div>
+                </section>
+                <section class="tech-section" >
+                    <h2>De Technische Kant</h2>
+                    <p>
+                        Op dit moment is er alleen een front-end voor dit Project. Zelfs voor de front-end moet er nog het één en ander gebeuren. 
+                        Zover is er alleen HTML, CSS & wat JavaScript gebruikt. Het is de bedoeling dat voor dit Project een backend komt, met vooral de focus op het boekingssysteem.
+                        Hoe dit er exact gaat uit zien wordt momenteel uitgewerkt, maar de verwachting is om Express te gebruiken voor de routering, Google's Calendar API voor de afspraken, een MongoDB of SQL database & EJS als templating engine.
+                    </p>
+                    <section id="tech-section-pr56">
+                        <div class="overview-lists">
+                            <ul>
+                                <h3>Features</h3>
+                                <li>handmatig geschreven vormen met clip-path</li>
+                            </ul>
+                        </div>
+                        <div class="overview-lists">
+                            <ul>
+                                <h3>Verbeter punten</h3>
+                                <li>Semantische HTML</li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <button class="close-btn" data-project="praktijk56"><img src="./images/icons/close.svg" alt=""></button>
+        </div>
+        <div class="projects-section">
+            <div class="project-container">
+                <div class="bg-shape-1"></div>
+                <div class="project">
+                    <img src="./images/rechtdeurzee-black-white.png" alt="">
+                    <ul>
+                        <li> <img class="status" src="./images/icons/active2.svg" alt=""> Actief  </li>
+                        <li><a href="https://www.rechtdeurzee.nl">Website</a></li>
+                        <li><a target="_blank" rel="noreferrer noopener" href="https://github.com/Sluisdev/rechtdeurzee-v2">GitHub</a></li>
+                        <li id="techstack-li-rd">Techstack<ul class="techstack-items">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript (front-end)</li>
+                            <li>NodeJS (back-end)</li>
+                            <li>Express</li>
+                            <li>EJS</li>
+                            <li>MongoDB</li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <button class="overview-btn" data-project="rechtdeurzee"><img src="./images/icons/arrow.svg" alt=""></button>
+            </div>
+            <div class="project-container">
+                <div class="bg-shape-1"></div>
+                <!-- <h3>Praktijk 56</h3> -->
+                <div class="project">
+                    <img src="./images/praktijk56-black-white.png" alt="">
+                    <ul>
+                        <li><img class="status" src="./images/icons/pending.svg" alt=""> In ontwikkeling</li>
+                        <li><a href="https://sluisdev.github.io/Praktijk56/">Website</a></li>
+                        <li><a href="https://github.com/Sluisdev/Praktijk56">GitHub</a></li>
+                        <li id="techstack-li-pr56">Techstack <ul class="techstack-items">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript (front-end)</li>
+                        </ul></li>
+                    </ul>
+                </div>
+                <button class="overview-btn" data-project="praktijk56"><img src="./images/icons/arrow.svg" alt=""></button>
+            </div>
+        </div>        
+    </div>
+    <footer class="end-bar"></footer>
+    <script src="./app.js"></script>
+</body>
+</html>
