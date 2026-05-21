@@ -512,8 +512,8 @@ y=height */
 
     .intro-container {
         height: 100vh;
-        background-position: top;
-        background-size:200% 101%;
+        background-position: center;
+        background-size:230% 101%;
         background-repeat: no-repeat;
     }
 
@@ -575,7 +575,7 @@ y=height */
 
     .about-me-container {
         height: fit-content;
-        padding: 25vh 0vh 25vh 0vh;
+        padding: 20vh 0vh 10vh 0vh;
         top: 0vh;
         /* overflow: hidden; */
         /* top: 35vh; */
@@ -583,11 +583,6 @@ y=height */
 
     .section-title {
         font-size: 2.2em;
-    }
-
-    .projects-container {
-        height: fit-content;
-        padding: 10vh 0vh 10vh 0vh;
     }
 
     .projects-section {
