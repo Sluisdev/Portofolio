@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 
 
 body {
-    /* min-height:100%; */
+    /* min-height:fit-content; */
     background: linear-gradient(#253334 140vh,#3E5354,#809F97 85%,#AEBDAA)
 }
 
@@ -78,8 +78,10 @@ body {
 
 .about-me-container {
     position: relative;
-    height: 150vh;
-    top: 10vh;
+    margin: 0vh 0vh 25vh 0vh;
+    height: fit-content;
+    width: 100%;
+    /* top: 10vh; */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -116,7 +118,7 @@ body {
 /* font-family: "Alfa Slab One", serif; */
 
 #about-me-items {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
@@ -166,14 +168,16 @@ body {
 .outdoor {
     background-image: url(./images/SVG-Free-Mountain-Bike-by-PrintYourStoryCom.svg);
     background-repeat: no-repeat;
-    background-position: 85px 120px;
+    /* background-position: 85px 120px; */
+    background-position: 140% 135%;
+    background-size: 80%;
 }
 
 .tech {
     background-image: url(./images/laptop-computer-code-svgrepo-com.svg);
     background-repeat: no-repeat;
     background-size: 75%;
-    background-position: 40px 195px;
+    background-position: 50% 117.5%;
 
 }
 
@@ -189,12 +193,13 @@ body {
     background-image: url(./images/movie-svgrepo-com.svg);
     background-repeat: no-repeat;
     background-size: 75%;
-    background-position: 100px 195px;
+    background-position: 120% 118%;
 }
    
 
 .projects-container {
-    height: 110vh;
+    height: fit-content;
+    margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -222,6 +227,8 @@ body {
         -3px 0px 5px -4px black,
         0px -1px 5px -4px black;
     padding:20px 10px 10px 10px;
+    max-height: 390px;
+    max-width: 305px;
     height: 60vh;
     width: 23vw;
     border-top-right-radius:  20px;
@@ -527,18 +534,19 @@ y=height */
     }
 
     .item {
-        height: 60vh;
+        height: 300px;
+        /* max-height: 300px; */
         width: 75%;
         max-width: 250px;
     }
 
     .outdoor {
-        background-position: 130px 150px;
-        background-size: 60%;
+        /* background-position: 130px 170px; */
+        background-size: 70%;
     }
 
     .tech {
-        background-position: 60px 158px;
+        background-position: 60px 180px;
         background-size: 60%;
     }
 
@@ -549,7 +557,7 @@ y=height */
 
     .movie {
         background-size: 60%;
-        background-position: 110px 160px;
+        background-position: 115px 180px;
     }
 
     .info-p {
@@ -558,7 +566,9 @@ y=height */
     }
 
     #about-me-items {
+        height: 100%;
         margin-top: 5vh;
+        gap: 15px;
         flex-direction: column;
         align-items: center;
     }
@@ -588,7 +598,7 @@ y=height */
     .project-container {
         width: 80%;
         max-width: 300px;
-        height: 75vh;
+        height: 350px;
     }
 
     .overview-items-div > section {
@@ -670,32 +680,93 @@ y=height */
 
 }
 
-@media (min-width: 480px ) and (max-width: 780px) {
+@media (min-width: 580px ) and (max-width: 1024px) {
     
-    #in-progress {
-    font-size: 18px;
-   }
-
-   #wrench {
-    height: 50px;
-    width: 50px;
-   }
-
-   #hammer {
-    height: 50px;
-    width: 50px;
-   }
-
-   .gear {
-    width: 50px;
-    height: 50px;
-   }
-
    #intro-text {
-    margin-top: 15px;
+        font-size: 3.5em;
+
    }
+
+   #portret {
+    width: 250px;
+    height: 250px;
+   }
+
+   #about-me-items {
+    flex-wrap: wrap;
+    align-content:space-evenly;
+    /* height: fit-content; */
+    margin-bottom: 25vh;
+    overflow: hidden;
+   }
+
+   .project-container {
+    height: 70vh;
+    width: 43vw;
+    max-width: 250px;
+    max-height: 350px;
+   }
+
+   .projects-section {
+    gap: 5vw;
+   }
+
+   .overview-items-div {
+    width: 90%;
+   }
+
+    .overview-lists {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0px;
+    }
+
+    .overview-lists > ul > li {
+        width: 95%;
+    }
+
+    .tech-section > section {
+        gap: 0%;
+        justify-content: space-evenly;
+    }
+
+    .overview-container > button {
+        left: 96%;
+    }
+
+    .project > ul > li {
+        margin-bottom: 0px;
+        gap: 5px;
+    }
 
 }
+
+/* @media (min-width: 1024px) and (max-width: 1200px){
+
+    .item {
+        height: 300px;
+        max-height: 300px;
+        width: 75%;
+        max-width: 250px;
+    }
+
+    .outdoor {
+        background-position: 130px 170px;
+        background-size: 60%;
+    }
+
+    .tech {
+        background-position: 60px 180px;
+        background-size: 60%;
+    }
+
+    .cook {
+        background-size: 55%; 
+
+    }
+
+} */
 
 /* @media (max-width: 350px){
     .projects-container {
@@ -711,14 +782,14 @@ y=height */
     }
 } */
 
-@media (Max-width: 1000px) {
+/* @media (Max-width: 1000px) {
     #about-me-items {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
     }
 
-}
+} */
 
 
 
@@ -734,285 +805,6 @@ y=height */
 
 
 
-=======
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Removing Padding & Margin from HTML elements to ensure elements are using full width */
-
-
-html { 
-    scroll-snap-type: y mandatory;
-}
-
-
-body {
-    background: linear-gradient(#253334 40%,#3E5354,#809F97 90%,#AEBDAA)
-}
-
-.navigation-bar {
-    background-color: #2E4F4F;
-    color: #FEFAE0;
-    height: 30px;
-    scroll-snap-align: start;
-    border-radius: 0px 0px 5px 5px;
-}
-
-/* Navigation Bar & Navigation Items */
-
-.intro-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    align-items: center;
-    background-image: url(./images/pxfuel.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-#portret {
-    width: 280x;
-    height: 280px;
-    border-radius: 50%;
-    border: 7px;
-    border-style: solid;
-    border-color: #2C3333;
-}
-
-#intro-portret {
-    order: 1;
-    transition: rotate 1s;
-}
-
-#intro-portret:hover {
-    rotate: 180deg;
-}
-
-#intro-text {
-    color: #0E8388;
-    font-weight: bold;
-    font-size: 2.2rem;
-    text-align: center;
-    font-family: "Parisienne",cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Intro Section */
-
-.about-me-container {
-    height: 100%;
-    margin-top: 150px;
-}
-
-#about-me-items {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-
-.title {
-    color: #DCF7F1;
-    padding-top: 1px;  /* Adding 1PX padding due to margin collapsing on the child element */
-    text-align: center;
-    scroll-snap-align: start;
-    font-size: 1.4rem;
-}
-
-.title > h1 {
-    margin-top: 25px;
-    margin-bottom: 50px;
-}
-
-.item {
-   height: 350px;
-   width: 250px;
-   border: 2px;
-   border-color:#003B4A;
-   border-style: solid;
-   border-radius: 7px;
-   color: #003B4A;
-   background-color: #CBE4DE;
-   padding: 10px;
-   text-align: center;
-
-}
-
-.item > p {
-    margin-top: 10px;
-}
-
-.item:hover {
-    box-shadow: 3px 3px 10px black;
-    border-style: solid;
-    border-color: black;
-}
-
-.outdoor {
-    background-image: url(./images/SVG-Free-Mountain-Bike-by-PrintYourStoryCom.svg);
-    background-repeat: no-repeat;
-    background-position: 85px 120px;
-}
-
-.tech {
-    background-image: url(./images/laptop-computer-code-svgrepo-com.svg);
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: 40px 195px;
-
-}
-
-.cook {
-    background-image: url(./images/cooking-svgrepo-com.svg);
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: bottom left;
-
-}
-
-.movie {
-    background-image: url(./images/movie-svgrepo-com.svg);
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: 100px 195px;
-}
-   
-
-.projects-container {
-    height: 95vh;
-    margin-top: 50px;
-    scroll-snap-align: start;
-}
-
-#projects-section {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-
-.gear {
-    width: 90px;
-    height: 90px;
-}
-
-
-#hammer {
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    z-index: 5;
-    rotate: 45deg;
-}
-
-#wrench {
-    height: 90px;
-    width: 90px;
-    position: absolute;
-    z-index: 5;
-}
-
-#in-progress {
-    font-size: 2.0rem;
-    color: #2C3333;
-}
-
-.end-bar {
-    background-color: #2E4F4F;
-    height: 31px;
-}
-
-
-@media (max-width: 550px) {
-    #about-me-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-me-container {
-        height: 100%;
-    }
-
-   .tech {
-    scroll-snap-align: start;
-   }
-
-   .cook {
-    scroll-snap-align: start;
-   }
-
-   .movie {
-    scroll-snap-align: start;
-   }
-
-
-}
-
-@media (max-width: 780px) {
-    
-    #in-progress {
-    font-size: 18px;
-   }
-
-   #wrench {
-    height: 50px;
-    width: 50px;
-   }
-
-   #hammer {
-    height: 50px;
-    width: 50px;
-   }
-
-   .gear {
-    width: 50px;
-    height: 50px;
-   }
-
-   #intro-text {
-    margin-top: 15px;
-   }
-
-}
-
-@media (max-width: 350px){
-    .projects-container {
-        text-align: center;
-    }
-
-    .gear {
-        margin-right: 50px;
-    }
-
-    .intro-container {
-        height: 100%;
-    }
-}
-
-@media (Max-width: 1000px) {
-    #about-me-items {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .movie {
-        scroll-snap-align: start;
-    }
-
-}
-
-@media (Max-width: 880px) {
-    .cook {
-        scroll-snap-align: start;
-    }
-}
 
 
 
@@ -1029,4 +821,4 @@ body {
 
 
 
->>>>>>> f5da6f381ea7f3658f317a06d2a7bdb60e6b3636
+
