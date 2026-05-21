@@ -738,54 +738,116 @@ y=height */
 
 }
 
-/* @media (min-width: 1024px) and (max-width: 1200px){
+@media (min-width: 1440px) {
+
+    #intro-text {
+        font-size: 5em;
+    }
+
+    #portret {
+        width: 300px;
+        height: 300px;
+    }
 
     .item {
-        height: 300px;
-        max-height: 300px;
-        width: 75%;
-        max-width: 250px;
+        height: 400px;
+        width: 300px;
     }
 
-    .outdoor {
-        background-position: 130px 170px;
-        background-size: 60%;
+    .info-p {
+        font-size: 1.1em;
+        width: 50%;
     }
 
-    .tech {
-        background-position: 60px 180px;
-        background-size: 60%;
+    .section-title {
+        font-size: 3.2em;
     }
 
-    .cook {
-        background-size: 55%; 
-
+    .item > p {
+        font-size: 1em;
     }
 
-} */
+    .item > h2 {
+        font-size: 1.3em;
+    }
 
-/* @media (max-width: 350px){
     .projects-container {
-        text-align: center;
+        height: 95vh;
     }
 
-    .gear {
-        margin-right: 50px;
+    .project-container {
+        height: 65vh;
+        max-height: 450px;
+        max-width: 350px;
     }
 
-    .intro-container {
-        height: 100%;
-    }
-} */
-
-/* @media (Max-width: 1000px) {
-    #about-me-items {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
+    .techstack-items > li {
+        font-size: 1em;
     }
 
-} */
+    .project > ul a {
+        font-size: 1.1em;
+    }
+
+    .project > ul > li {
+        font-size: 1.1em;
+    }
+    
+    .tech-section > section {
+        margin-top: 2vh;
+        justify-content: space-evenly;
+    }
+
+   .overview-items-div > section {
+        gap: 15px;
+   }
+
+    .overview-items-div {
+        height: fit-content;
+        gap: 2vh;
+    }
+
+    .overview-container {
+        padding-top: 0vh;
+        height: 100vh;
+        align-items: center;
+        /* padding: 5vh 0vh 5vh 0vh; */
+    }
+
+    .imgs-overview > img {
+        height: initial;
+        width: 24%;
+    }
+
+    .imgs-overview {
+        height: 80%;
+    }
+
+    .overview-items-div p {
+        font-size: 1.1em;
+    }
+
+    .overview-items-div h2 {
+        font-size: 1.8em;
+    }
+
+    .overview-lists h3 {
+        font-size: 1.3em;
+    }
+
+    .overview-lists > ul > li {
+        font-size: 1.15em;
+    }
+
+    .close-btn > img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .overview-container > button {
+        top: 2%
+    }
+}
 
 
 
