@@ -4,7 +4,7 @@ A website to demonstrate the Web Development Projects I've worked on.
 
 ## About the website
 
-The main goal of this website is to demonstrate my Projects, but it also provides some insight into some personal information. 
+The main goal of this website is to demonstrate my Projects, but it also provides insight into some personal interest. 
 
 On the technical side of things, The code & design is completely my own. 
 
