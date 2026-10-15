@@ -477,7 +477,7 @@ y=height */
     font-family: "Cabin", sans-serif;
 }
 
-.tech-section > ol li {
+.tech-section > ol > li {
     margin-left: 2%;
 }
 
