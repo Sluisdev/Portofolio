@@ -473,14 +473,10 @@ y=height */
     text-align: initial;
 }
 
-tech-section > ol {
+.tech-section > ol {
     font-family: "Cabin", sans-serif;
     margin-left: 2%;
 }
-
-/* tech-section > ol h4 {
-    
-} */
 
 #tech-section-pr56 {
     justify-content: space-evenly;
