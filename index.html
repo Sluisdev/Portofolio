@@ -165,9 +165,22 @@
                 <section class="tech-section" >
                     <h2>De Technische Kant</h2>
                     <p>
-                        Op dit moment is er alleen een front-end voor dit Project. Zelfs voor de front-end moet er nog het één en ander gebeuren. 
-                        Zover is er alleen HTML, CSS & wat JavaScript gebruikt. Het is de bedoeling dat voor dit Project een backend komt, met vooral de focus op het boekingssysteem.
-                        Hoe dit er exact gaat uit zien wordt momenteel uitgewerkt, maar de verwachting is om Express te gebruiken voor de routering, Google's Calendar API voor de afspraken, een MongoDB of SQL database & EJS als templating engine.
+                        Deze website is momenteel nog in ontwikkeling. Grotendeels is de Front-End & Back-End al klaar. 
+                        De focus ligt op dit moment bij het afronden van het Boekingsysteem. 
+                        
+                        Het Boekingsysteem is volledig zelf gebouwd, geen paketten van NPM of externe (CDN) scripts. Dit systeem krijgt informatie over de beschikbaarheid via Google z'n Calendar API. 
+                        Op basis van de teruggeleverde data, worden de beschikbare tijden gepresenteerd aan de klant.
+                        De eigenaresse kan haar Agenda beheren vanuit Google & alle updates worden gesynchroniseerd met de Back-End.  
+                        
+                        De Boeking 'flow' is als volgt: 
+                        <br/>
+                        <ol>
+                            <li>Klant kiest een behandeling</li>
+                            <li>Op basis van de duur van de behandeling, de gekozen datum & beschikbaarheid, worden er een aantal tijdvakken gepresenteert </li>
+                            <li>Na het selecteren van de gewenste datum & tijd, moet de klant zijn/haar contactgegevens doorgeven  </li>
+                            <li>in de volgende stap is er een overzicht met alle boekingsgegevens en In dit overzicht kan de klant ook de boekingbevestigen</li>
+                            <li>een Succes pagina met het boekingsnummer </li>
+                        </ol>
                     </p>
                     <section id="tech-section-pr56">
                         <div class="overview-lists">
@@ -221,7 +234,10 @@
                         <li id="techstack-li-pr56">Techstack <ul class="techstack-items">
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>JavaScript (front-end)</li>
+                            <li>JavaScript (Front-End)</li>
+                            <li>React</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
                         </ul></li>
                     </ul>
                 </div>
